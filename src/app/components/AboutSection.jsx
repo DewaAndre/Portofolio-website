@@ -2,6 +2,8 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Particles from "./ParticlesComponent"; // Sesuaikan path impor dengan struktur direktori Anda
+
 
 const TAB_DATA = [
   {
@@ -52,7 +54,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="about z-[-1]">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/coding4.jpg" width={500} height={500}  alt="as"/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">

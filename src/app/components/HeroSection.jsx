@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+    <div className="lg:py-16 {styles.hero}" id="home">
+      <div className="grid grid-cols-1 sm:grid-cols-12  mt-24 mx-auto px-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -21,9 +21,8 @@ const HeroSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "Andrean",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 "Web Developer",
                 1000,
                 "UI/UX Designer",
@@ -53,11 +52,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 place-self-center mt-4 lg:mt-0 flex justify-end"
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative hidden md:flex   ">
             <Image
-              src="/hero-image.png"
+              src="/andre2.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -tranlate-y-1/2  left-1/2"
               width={300}
@@ -66,9 +65,9 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
-  left - 1 / 2;
 };
 
 export default HeroSection;
+

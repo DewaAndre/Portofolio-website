@@ -53,7 +53,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section>
+    <section className=" mt-24 mx-auto px-12" id="project">
       <h2 className="text-center text-4xl font-bold text-white mt-4 py-4">
         My Project{" "}
       </h2>
