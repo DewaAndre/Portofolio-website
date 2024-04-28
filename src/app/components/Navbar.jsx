@@ -41,7 +41,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const navbarClass = scrolling ? "bg-[#181818] transition-all duration-500" : "bg-transparent transition-all duration-500";
+  const navbarClass = scrolling ? "bg-[#0F0F0F] transition-all duration-500" : "bg-transparent transition-all duration-500";
 
   return (
     <nav className={`fixed mx-auto top-0 left-0 right-0 z-10 ${navbarClass}`}>
