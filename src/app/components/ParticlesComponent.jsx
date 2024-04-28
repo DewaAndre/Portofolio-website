@@ -40,7 +40,7 @@ const ParticlesComponent = () => {
             value: "#121212",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
@@ -65,10 +65,10 @@ const ParticlesComponent = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#956436",
           },
           links: {
-            color: "#ffffff",
+            color: "#956436",
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -81,7 +81,7 @@ const ParticlesComponent = () => {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 2,
             straight: false,
           },
           number: {
