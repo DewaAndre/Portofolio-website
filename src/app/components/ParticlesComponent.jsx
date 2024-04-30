@@ -1,4 +1,5 @@
-"use client"
+// ParticlesComponent.jsx
+"use client";
 import { useCallback, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -39,28 +40,22 @@ const ParticlesComponent = () => {
           color: {
             value: "#121212",
           },
+          // Set the background to be static (not moving)
+          position: "absolute",
+          repeat: "no-repeat",
+          size: "cover",
+          zIndex: 0,
         },
         fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
-              enable: true,
-              mode: "push",
+              enable: false, // Disable onClick event
             },
             onHover: {
-              enable: true,
-              mode: "repulse",
+              enable: false, // Disable onHover event
             },
             resize: true,
-          },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
           },
         },
         particles: {
@@ -75,13 +70,12 @@ const ParticlesComponent = () => {
             width: 1,
           },
           move: {
-            direction: "none",
             enable: true,
+            speed: 1, // Adjust the speed of particle movement
             outModes: {
               default: "bounce",
             },
             random: false,
-            speed: 2,
             straight: false,
           },
           number: {
